@@ -24,6 +24,8 @@ npm run dev
 ### 2. Python Service
 ```bash
 cd python-service
+python -m venv venv
+.\venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
