@@ -1,0 +1,59 @@
+.dashboard { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-title { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.02em; }
+.page-desc { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+.header-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.stat-card { text-align: center; padding: 1.5rem 1rem; }
+.stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 0.5rem; }
+.stat-value { font-size: 2.4rem; font-weight: 800; font-family: var(--font-mono); line-height: 1; }
+.stat-sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem; }
+
+.dash-grid { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.card-header h3 { font-size: 1rem; font-weight: 700; }
+.card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+/* ring */
+.ring-wrap { position: relative; width: 160px; height: 160px; margin: 0 auto 1.2rem; }
+.ring-svg { width: 100%; height: 100%; }
+.ring-label {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.ring-pct { font-size: 1.8rem; font-weight: 800; font-family: var(--font-mono); color: var(--accent); line-height: 1; }
+.ring-sub { font-size: 0.7rem; color: var(--muted); }
+.ring-legend { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; color: var(--muted); }
+.legend-item span { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 900px) {
+  .dash-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}

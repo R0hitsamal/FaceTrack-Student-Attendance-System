@@ -1,0 +1,4 @@
+.students-page { display: flex; flex-direction: column; gap: 1.5rem; }
+.filters-bar { padding: 1rem 1.2rem; }
+.filters-form { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 1rem 0 0.4rem; border-top: 1px solid var(--border); margin-top: 0.5rem; }

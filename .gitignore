@@ -1,0 +1,23 @@
+# Node
+node_modules/
+.env
+dist/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Face encodings (don't commit real data)
+python-service/models_store/encodings.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build
+frontend/dist/
