@@ -51,8 +51,7 @@ npm run dev
 |---|---|
 | Frontend | React 18, React Router v6, Axios, Recharts |
 | Backend | Node.js, Express, JWT, Mongoose |
-| Database | MongoDB Atlas |
-| Face Recognition | Python, FastAPI, OpenCV, face_recognition |
+| Database | MongoDB Atlas | | Python, FastAPI, OpenCV |
 | Styling | Custom CSS (no framework) |
 
 ## 📡 API Overview
